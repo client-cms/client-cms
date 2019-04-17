@@ -1,9 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+
+import Contract from './views/contract/contract'
+
 import mains from './views/main/mains';
 import clientInsert from './views/client/insert';
 import clientquery from './views/client/query';
 import clientupdate from './views/client/updata';
+
 import sellinsert from './views/cart/cinsert';
 import sellquery from './views/cart/cinsert';
 import tu from './views/tu';
@@ -20,8 +24,8 @@ export default new Router({
       name:'tu',
       component:tu,
     },
-    {
-      path: '/mains',
+
+    {path: '/mains',
       name: 'mains',
       meta: {
         title: '主页',
@@ -67,6 +71,14 @@ export default new Router({
             title: '查看任务',
           },
           component: sellquery,
+        },
+        {
+          path: 'contract',
+          name: 'contract',
+          component: Contract,
+          meta:{
+            title:'客户合同文件管理',
+          }
         },
 
       ]
