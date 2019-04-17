@@ -5,16 +5,12 @@
     <el-input v-model="form.depa"></el-input>
   </el-form-item>
   <el-form-item label="剩余天数">
-    <el-input v-model="form.lday"></el-input>
+    <el-input v-model="form.lady"></el-input>
   </el-form-item>
 
   <el-form-item label="具体时间">
     <el-col :span="11">
       <el-date-picker type="date" placeholder="选择日期" v-model="form.stime" style="width: 100%;"></el-date-picker>
-    </el-col>
-    <el-col class="line" :span="2">-</el-col>
-    <el-col :span="11">
-      <el-time-picker placeholder="选择时间" v-model="form.date2" style="width: 100%;"></el-time-picker>
     </el-col>
   </el-form-item>
 <el-form-item label="达标没有">
@@ -40,14 +36,13 @@
 
 <script>
  import Cart from '../../api/cart.js';
-import { inspect } from 'util';
  let {insert}=Cart;
   export default {
     data() {
       return {
         form: {
           depa:'',
-          lday:'',
+          lady:'',
           stime:'',
           standard:'',
           about:'',
