@@ -2,7 +2,7 @@
     <div class="box h">
         <el-form :inline="true" :model="formInline" class="demo-form-inline">
             <el-button type="info">新增合同</el-button>
-            <el-form-item >
+            <el-form-item>
                 <el-input v-model="formInline.user" placeholder="合同编号"></el-input>
             </el-form-item>
             <el-form-item >
