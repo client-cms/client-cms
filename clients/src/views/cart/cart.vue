@@ -73,6 +73,7 @@
 
 
 <script>
+ import Goods from '../../api/cart.js';
     export default {
         data() {
             return {
@@ -105,6 +106,7 @@
                 },
                 value1: '',
                 value2: '',
+                
                 
             };
         },
