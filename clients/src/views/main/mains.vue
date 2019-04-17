@@ -46,10 +46,14 @@
                                 <el-menu-item index="/mains/clientinsert">添加客户</el-menu-item>
                                 <el-menu-item index="/mains/clientquery">查看客户</el-menu-item>
                             </el-submenu>
-                            <el-menu-item index="/mains/category">
-                                <i class="el-icon-menu"></i>
-                                <span slot="title">分类管理</span>
-                            </el-menu-item>
+                            <el-submenu index="2">
+                                <template slot="title">
+                                    <i class="el-icon-document"></i>
+                                    <span>销售管理</span>
+                                </template>
+                                <el-menu-item index="/mains/sellinsert">添加任务</el-menu-item>
+                                <el-menu-item index="/mains/sellquery">查看任务</el-menu-item>
+                            </el-submenu>
                             <el-submenu index="">
                                 <template slot="title">
                                     <i class="el-icon-document"></i>
@@ -58,7 +62,7 @@
                                 <el-menu-item index="/mains/goodsInsert">添加商品</el-menu-item>
                                 <el-menu-item index="/mains/goodsQuery">查看商品</el-menu-item>
                             </el-submenu>
-                            <el-submenu index="1">
+                            <el-submenu index="6">
                                 <template slot="title">
                                     <i class="el-icon-document"></i>
                                     <span>轮播管理</span>
