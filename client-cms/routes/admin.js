@@ -1,9 +1,8 @@
 var express = require('express');
 var router = express.Router();
+const client=require('./admin/client');
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
 
+router.use('/client',client);
 module.exports = router;
