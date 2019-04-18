@@ -26,5 +26,19 @@ router.post('/',async (req,res)=>{
         })
     }
 })
-
+router.get('/',async (req,res)=>{
+    let data=await mysql('select * from sell')
+    if(data.length){
+        res.json({
+            code:0,
+            msg:"success",
+            data
+        })
+    }else{
+        res.json({
+            code:1,
+            msg:"fail"
+        })
+    }
+})
 module.exports=router

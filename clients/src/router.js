@@ -9,7 +9,7 @@ import clientquery from './views/client/query';
 import clientupdate from './views/client/updata';
 
 import sellinsert from './views/cart/cinsert';
-import sellquery from './views/cart/cinsert';
+import sellquery from './views/cart/cart';
 
 
 Vue.use(Router)
