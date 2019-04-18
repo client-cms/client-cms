@@ -12,8 +12,11 @@
     <el-col :span="11">
       <el-date-picker type="date" placeholder="选择日期" v-model="form.stime" style="width: 100%;"></el-date-picker>
     </el-col>
+<<<<<<< HEAD
     <el-col class="line" :span="2">-</el-col>
    
+=======
+>>>>>>> cb523102559421b71652a3fb3b9bbf7c87e8f71e
   </el-form-item>
 <el-form-item label="达标没有">
     <el-switch v-model="form.standard"></el-switch>
@@ -38,7 +41,10 @@
 
 <script>
  import Cart from '../../api/cart.js';
+<<<<<<< HEAD
 
+=======
+>>>>>>> cb523102559421b71652a3fb3b9bbf7c87e8f71e
  let {insert}=Cart;
   export default {
     data() {
