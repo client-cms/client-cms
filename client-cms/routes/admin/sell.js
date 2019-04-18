@@ -27,31 +27,18 @@ router.post('/',async (req,res)=>{
     }
 })
 router.get('/',async (req,res)=>{
-<<<<<<< HEAD
-    let data=await mysql('select * from sell')
-    if(data.length){
-        res.json({
-            code:0,
-            msg:"success",
-            data
-=======
     let data= await mysql('select * from sell order by id desc');
     if(data.length){
         res.json({
             code:0,
             msg:'success',
             data,
->>>>>>> cb523102559421b71652a3fb3b9bbf7c87e8f71e
         })
     }else{
         res.json({
             code:1,
-<<<<<<< HEAD
-            msg:"fail"
-=======
             msg:'fail',
 
->>>>>>> cb523102559421b71652a3fb3b9bbf7c87e8f71e
         })
     }
 })
